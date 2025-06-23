@@ -1,0 +1,127 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+    --font3: "Baloo Da 2", sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+}
+#nav {
+    padding: 0 !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#nav ul li a {
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    padding: 18px 20px;
+    position: relative;
+}
+
+#nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s cubic-bezier(.05, .71, .93, .59);
+    background: #353535;
+}
+
+#nav ul li a:hover::after {
+    width: 100%;
+}
+/* -----hero start -------*/
+span{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #353535;
+}
+ h4{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: #353535;
+
+}
+ p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+}
+.row{
+    align-items: center;
+}
+ .link_btn a {
+    display: inline-flex;
+    align-items: center;
+    background: #FFCC00;
+    line-height: 0;
+    padding: 16px 45px;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.link_btn a span{
+    color: #fff;
+    margin-left: 11px;
+}
+.link_btn a:hover{
+    background:#FFCC00;
+    color: #353535;
+    outline: 1px solid #353535;
+}
+.link_btn a:hover span{
+    color: #353535;
+}
+.link-btn a:last-child{
+    background: #FFCC00;
+    border: 1px solid red;
+    color: #353535;
+    margin-left: 40px;
+    padding: 15px 45px;
+
+}
+.link-btn :last-child span{
+    color: #353535;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    display: flex;
+
+}
+ul li a{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    line-height: 0;
+    color: #000000;
+    padding: 10px;
+    background: #353535;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: #fff;
+
+}
+/* -------hero End------- */
